@@ -1,3 +1,120 @@
+@keyframes flicker {
+	 0% {
+		 opacity: .8691485221;
+	}
+	 5% {
+		 opacity: .84123268292;
+	}
+	 10% {
+		 opacity: .92004246833;
+	}
+	 15% {
+		 opacity: .8402614718;
+	}
+	 20% {
+		 opacity: .81786486476;
+	}
+	 25% {
+		 opacity: .871866792875;
+	}
+	 30% {
+		 opacity: .83775690;
+	}
+	 35% {
+		 opacity: .834171030;
+	}
+	 40% {
+		 opacity: .9251970669;
+	}
+	 45% {
+		 opacity: .81814412438;
+	}
+	 50% {
+		 opacity: .91263948186;
+	}
+	 55% {
+		 opacity: .8831671794;
+	}
+	 60% {
+		 opacity: .91101794730;
+	}
+	 65% {
+		 opacity: .87344889665;
+	}
+	 70% {
+		 opacity: .87713228531;
+	}
+	 75% {
+		 opacity: .8756813877;
+	}
+	 80% {
+		 opacity: .871181098193;
+	}
+	 85% {
+		 opacity: .81918455291;
+	}
+	 90% {
+		 opacity: .8721675858;
+	}
+	 95% {
+		 opacity: .847768484;
+	}
+	 100% {
+		 opacity: .8489670404;
+	}
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    outline: 0;
+  }
+body{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
 p{
-  color: blue;
+  font-family: Chicago,sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.screen{
+  max-width: 800px;
+  height: 600px;
+  width: 800px;
+  max-height: 600px;
+  background: linear-gradient(rgba(18,16,16,.75) 50%,rgba(0,0,0,.5) 50%),linear-gradient(90deg,rgba(255,0,0,.06),rgba(0,255,0,.02),rgba(0,0,255,.06));
+  z-index: 10;
+  background-size: 100% 2px, 3px 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+
+
+.desktop{
+  z-index: 1;
+  max-width: 800px;
+  height: 600px;
+  width: 800px;
+  max-height: 600px;
+  animation:flicker 0.01s infinite;
+  background-image: url(images/desktopBackground.png);
+  border-bottom: 35px solid #C2C6CA;
+  border-radius: 7px;
+}
+.desktop:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 30px;
+  border-bottom: 5px solid white;
 }
