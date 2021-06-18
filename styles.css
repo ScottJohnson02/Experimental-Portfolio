@@ -155,7 +155,8 @@ p{
   margin-bottom: 8px;
   width: 100px;
   height: 85px;
-  margin-left: 5px;``
+  margin-left: 5px;
+  cursor: pointer;
 }
 .folder p{
   color: white;
@@ -190,8 +191,30 @@ p{
   width: 85px;
   position: absolute;
   top: 563px;
+  cursor: pointer;
 
 
+}
+#about-window{
+  display: none;
+}
+
+.projects{
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+}
+.project{
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 1.5vw;
+  height: 150px;
+}
+.project p{
+  text-align: center;
+  width: 75px;
+  height: 40px;
 }
 .window{
   position: absolute;
@@ -205,6 +228,12 @@ p{
   border-left: 2px solid #efefef;
   border-right: 2px solid #000;
   border-bottom: 2px solid #000;
+  z-index: 2;
+}
+
+.filling-empty-space-childs {
+    width:95.84px; /*the width of the images in this example*/
+    height:0; /*Important! for the divs to collapse should they fall in a new row*/
 }
 header{
   height: 25px;
@@ -233,8 +262,10 @@ header button{
   color: #000;
   background-color: silver;
   position: relative;
-  z-index: 10;
+  z-index: 2;
   float: right;
+  cursor: pointer;
+
 
 }
 .content{
@@ -270,4 +301,5 @@ header button{
   padding: 0;
   margin: 0;
   overflow-y: scroll;
+  padding: 1vw;
 }

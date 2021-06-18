@@ -17,11 +17,11 @@
       <div class="desktop">
 
         <div class="folders">
-          <div class="folder" id="top-icon">
+          <div onclick="openWindow()"class="folder" id="top-icon">
             <img src="images/User with computer.ico" alt="folder with papers">
             <p>About Me</p>
           </div>
-          <div class="folder">
+          <div onclick="openProjectWindow()" class="folder">
             <img src="images/Documents Folder.ico" alt="folder with papers">
             <p>My Previous Projects</p>
           </div>
@@ -49,9 +49,12 @@
           </div>
         </div>
 
-        <div class="window">
+        <div class="window" id="about-window">
+          <div class="project-windowheader">
+
+          </div>
           <header>
-            <button type="button" name="button"style="margin-left:3px">
+            <button onclick="closeWindow()"type="button" name="button"style="margin-left:3px">
               <img src="images/close-button.png" style="position:absolute;left:5px;top:1px;" width="10px">
 
             </button>
@@ -70,6 +73,92 @@
                       job would do work in a group of hard-working individuals all focused on achieving the same goal.
                      Some of my hobbies include hiking, camping, and collecting retro games/hardware. Feel free to contact me at:</p>
                      <a href="mailto:ScottyJohnson002@gmail.com">ScottyJohnson002@gmail.com</a>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="window" id="projects-window">
+          <div class="project-windowheader">
+
+          </div>
+          <header>
+            <button onclick="closeProjectWindow()"type="button" name="button"style="margin-left:3px">
+              <img src="images/close-button.png" style="position:absolute;left:5px;top:1px;" width="10px">
+
+            </button>
+            <button type="button" name="button" >
+              <img src="images/question.png" style="position:absolute;left:5px;top:1px;" width="10px">
+            </button>
+          </header>
+          <div class="content">
+            <div class="wrap">
+              <div class="outer">
+
+                <div class="inner projects" id="projects">
+                  <div class="project">
+                    <img src="images/folder.ico" width="75px"alt="folder with papers">
+                    <p>Python 3</p>
+                  </div>
+                  <div class="project">
+                    <img src="images/folder.ico" width="75px"alt="folder with papers">
+                    <p>Javascript</p>
+                  </div>
+                  <div class="project">
+                    <img src="images/folder.ico" width="75px"alt="folder with papers">
+                    <p>HTML/CSS</p>
+                  </div>
+                  <div class="project">
+                    <img src="images/folder.ico" width="75px"alt="folder with papers">
+                    <p>SQL</p>
+                  </div>
+                  <div class="project">
+                    <img src="images/folder.ico" width="75px"alt="folder with papers">
+                    <p>Client Projects</p>
+                  </div>
+
+                  <div class="filling-empty-space-childs project">
+
+                  </div>
+                  <div class="filling-empty-space-childs project">
+
+                  </div>
+                  <div class="filling-empty-space-childs project">
+
+                  </div>
+                  <div class="filling-empty-space-childs project">
+
+                  </div>
+                  <div class="filling-empty-space-childs project">
+
+                  </div>
+                  <div class="filling-empty-space-childs project">
+
+                  </div>
+                  <div class="filling-empty-space-childs project">
+
+                  </div>
+                  <div class="filling-empty-space-childs project">
+
+                  </div>
+                  <div class="filling-empty-space-childs project">
+
+                  </div>
+                  <div class="filling-empty-space-childs project">
+
+                  </div>
+                  <div class="filling-empty-space-childs project">
+
+                  </div>
+
+
+
+
                 </div>
 
               </div>
